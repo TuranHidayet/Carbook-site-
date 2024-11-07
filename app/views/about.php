@@ -1,6 +1,6 @@
 <?php include 'Partials/header.php'; ?>
 
-<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('../../public/assets/Front/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('../../assets/Front/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -15,7 +15,7 @@
 <section class="ftco-section ftco-about">
     <div class="container">
         <div class="row no-gutters">
-            <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(../../public/assets/Front/images/about.jpg);">
+            <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(../../assets/Front/images/about.jpg);">
             </div>
             <div class="col-md-6 wrap-about ftco-animate">
                 <div class="heading-section heading-section-white pl-md-5">
@@ -31,7 +31,7 @@
     </div>
 </section>
 
-<section class="ftco-section ftco-intro" style="background-image: url(../../public/assets/Front/images/bg_3.jpg);">
+<section class="ftco-section ftco-intro" style="background-image: url(../../assets/Front/images/bg_3.jpg);">
     <div class="overlay"></div>
     <div class="container">
         <div class="row justify-content-end">
@@ -56,7 +56,7 @@
                 <div class="carousel-testimony owl-carousel ftco-owl">
                     <div class="item">
                         <div class="testimony-wrap rounded text-center py-4 pb-5">
-                            <div class="user-img mb-2" style="background-image: url(../../public/assets/Front/images/person_1.jpg)">
+                            <div class="user-img mb-2" style="background-image: url(../../assets/Front/images/person_1.jpg)">
                             </div>
                             <div class="text pt-4">
                                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="item">
                         <div class="testimony-wrap rounded text-center py-4 pb-5">
-                            <div class="user-img mb-2" style="background-image: url(../../public/assets/Front/images/person_2.jpg)">
+                            <div class="user-img mb-2" style="background-image: url(../../assets/Front/images/person_2.jpg)">
                             </div>
                             <div class="text pt-4">
                                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="item">
                         <div class="testimony-wrap rounded text-center py-4 pb-5">
-                            <div class="user-img mb-2" style="background-image: url(../../public/assets/Front/images/person_3.jpg)">
+                            <div class="user-img mb-2" style="background-image: url(../../assets/Front/images/person_3.jpg)">
                             </div>
                             <div class="text pt-4">
                                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -89,7 +89,7 @@
                     </div>
                     <div class="item">
                         <div class="testimony-wrap rounded text-center py-4 pb-5">
-                            <div class="user-img mb-2" style="background-image: url(../../public/assets/Front/images/person_1.jpg)">
+                            <div class="user-img mb-2" style="background-image: url(../../assets/Front/images/person_1.jpg)">
                             </div>
                             <div class="text pt-4">
                                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -100,7 +100,7 @@
                     </div>
                     <div class="item">
                         <div class="testimony-wrap rounded text-center py-4 pb-5">
-                            <div class="user-img mb-2" style="background-image: url(../../public/assets/Front/images/person_1.jpg)">
+                            <div class="user-img mb-2" style="background-image: url(../../assets/Front/images/person_1.jpg)">
                             </div>
                             <div class="text pt-4">
                                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>

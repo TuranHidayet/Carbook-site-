@@ -1,6 +1,6 @@
 <?php include 'Partials/header.php'; ?>
 
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('../../public/assets/Front/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('../../assets/Front/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="car-wrap rounded ftco-animate">
-                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../public/assets/Front/images/car-1.jpg);">
+                        <div class="img rounded d-flex align-items-end" style="background-image: url('../../assets/Front/images/car-1.jpg');">
                         </div>
                         <div class="text">
                             <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="car-wrap rounded ftco-animate">
-                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../public/assets/Front/images/car-2.jpg);">
+                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../assets/Front/images/car-2.jpg);">
                         </div>
                         <div class="text">
                             <h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="car-wrap rounded ftco-animate">
-                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../public/assets/Front/images/car-3.jpg);">
+                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../assets/Front/images/car-3.jpg);">
                         </div>
                         <div class="text">
                             <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -61,7 +61,7 @@
 
                 <div class="col-md-4">
                     <div class="car-wrap rounded ftco-animate">
-                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../public/assets/Front/images/car-4.jpg);">
+                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../assets/Front/images/car-4.jpg);">
                         </div>
                         <div class="text">
                             <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="car-wrap rounded ftco-animate">
-                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../public/assets/Front/images/car-5.jpg);">
+                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../assets/Front/images/car-5.jpg);">
                         </div>
                         <div class="text">
                             <h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="car-wrap rounded ftco-animate">
-                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../public/assets/Front/images/car-6.jpg);">
+                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../assets/Front/images/car-6.jpg);">
                         </div>
                         <div class="text">
                             <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -104,7 +104,7 @@
 
                 <div class="col-md-4">
                     <div class="car-wrap rounded ftco-animate">
-                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../public/assets/Front/images/car-7.jpg);">
+                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../assets/Front/images/car-7.jpg);">
                         </div>
                         <div class="text">
                             <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -118,7 +118,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="car-wrap rounded ftco-animate">
-                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../public/assets/Front/images/car-8.jpg);">
+                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../assets/Front/images/car-8.jpg);">
                         </div>
                         <div class="text">
                             <h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
@@ -132,7 +132,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="car-wrap rounded ftco-animate">
-                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../public/assets/Front/images/car-9.jpg);">
+                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../assets/Front/images/car-9.jpg);">
                         </div>
                         <div class="text">
                             <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -147,7 +147,7 @@
 
                 <div class="col-md-4">
                     <div class="car-wrap rounded ftco-animate">
-                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../public/assets/Front/images/car-10.jpg);">
+                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../assets/Front/images/car-10.jpg);">
                         </div>
                         <div class="text">
                             <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -161,7 +161,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="car-wrap rounded ftco-animate">
-                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../public/assets/Front/images/car-11.jpg);">
+                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../assets/Front/images/car-11.jpg);">
                         </div>
                         <div class="text">
                             <h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
@@ -175,7 +175,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="car-wrap rounded ftco-animate">
-                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../public/assets/Front/images/car-12.jpg);">
+                        <div class="img rounded d-flex align-items-end" style="background-image: url(../../assets/Front/images/car-12.jpg);">
                         </div>
                         <div class="text">
                             <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
