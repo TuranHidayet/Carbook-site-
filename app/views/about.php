@@ -70,7 +70,7 @@
                             <div class="user-img mb-2" style="background-image: url(../../assets/Front/images/person_2.jpg)">
                             </div>
                             <div class="text pt-4">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <p class="mb-4">Far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                                 <p class="name">Roger Scott</p>
                                 <span class="position">Interface Designer</span>
                             </div>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Core;
+namespace App\Model;
 
 use PDO;
 use PDOException;
@@ -14,14 +14,14 @@ class Database
         $this->connection = $this->getConnection($db);
     }
 
-    private function getConnection(array $db): ?PDO
+    public static function getConnection(array $db): ?PDO
     {
         try {
             $dsn = sprintf("mysql:host=%s;dbname=%s;charset=utf8", $db['host'], $db['database']);
-            $pdo = new PDO($dsn, $db['username'], $db['password']);
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $pdo = new \PDO($dsn, $db['username'], $db['password']);
+            $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             return $pdo;
-        } catch (PDOException $e) {
+        } catch (\PDOException $e) {
             echo "Connection failed: " . $e->getMessage();
             return null;
         }

@@ -9,26 +9,20 @@ use App\Controllers\AuthController;
 use App\Controllers\Front\AboutController;
 use App\Controllers\Front\BlogController;
 use App\Controllers\Front\CarController;
+
 use App\Controllers\Front\ContactController;
 use App\Controllers\Front\HomeController;
 
+
+use App\Controllers\Admin\CarController as AdminCarController;
+
 $config = require_once '../config/config.php';
 
-$db = new \Core\Database($config['db']);
-//$pdo = $db->getPdo();
-//
-//$user = new User($db->getPdo());
-//
-//$result = $user->create('Turan Hidayətov', 'turan0123', 'turanhidayatov1@gmail.com', '+9946157618716', '123456');
-//if ($result) {
-//    echo "İstifadəçi uğurla əlavə edildi.";
-//} else {
-//    echo "Xəta baş verdi.";
-//}
+$db = new \App\Model\Database($config['db']);
 
-//$user = new User::create('Turan', 'turan123', 'turanhidayatov@gmail.com', '+9946157618716', 1235445);
-//var_dump($user);
 
+define('BASE_PATH', realpath(dirname(__DIR__)));
+define('PUBLIC_PATH', BASE_PATH.'/public');
 
 $request = $_SERVER['REQUEST_URI'];
 
@@ -63,9 +57,34 @@ switch ($request) {
         $controller->register();
         break;
 
+    case '/login':
+        $controller = new AuthController();
+        $controller->login();
+        break;
+
+    case '/logout':
+        $controller = new AuthController();
+        $controller->logout();
+        break;
+
     case '/admin':
         $controller = new AdminController();
         $controller->index();
+        break;
+
+    case '/admin/cars':
+        $controller = new AdminCarController();
+        $controller->index();
+        break;
+
+    case '/admin/cars/create':
+        $controller = new AdminCarController();
+        $controller->create();
+        break;
+
+    case '/admin/cars/delete':
+        $controller = new AdminCarController();
+        $controller->delete();
         break;
 
     default:

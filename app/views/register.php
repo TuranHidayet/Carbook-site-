@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Carbook - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Register</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="/assets/Front/css/icomoon.css">
     <link rel="stylesheet" href="/assets/Front/css/style.css">
 </head>
+
+<?php require_once '../config/config.php'; ?>
+
 <?php
 function isActive($route)
 {
@@ -34,6 +37,27 @@ function isActive($route)
     return $request === $route ? 'active' : '';
 }
 ?>
+
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $fullname = $_POST['fullname'];
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $password = $_POST['password'];
+    $profile_picture = $_POST['profile_picture'];
+
+
+    if (App\Model\User::create($fullname, $username, $email, $phone, $password, $profile_picture)) {
+
+        header("Location: login");
+        exit;
+    } else {
+        echo "Xəta baş verdi!";
+    }
+}
+?>
+
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark" id="ftco-navbar">
     <div class="container">
         <a class="navbar-brand" href="/">Car<span>Book</span></a>
@@ -48,6 +72,14 @@ function isActive($route)
                 <li class="nav-item <?php echo isActive('/cars'); ?>"><a href="/cars" class="nav-link">Cars</a></li>
                 <li class="nav-item <?php echo isActive('/blog'); ?>"><a href="/blog" class="nav-link">Blog</a></li>
                 <li class="nav-item <?php echo isActive('/contact'); ?>"><a href="/contact" class="nav-link">Contact</a></li>
+
+                <?php if (!isset($_SESSION['user'])):?>
+
+                    <li class="nav-item <?php echo isActive('/login'); ?>"><a href="/login" class="nav-link">Login</a></li>
+                    <li class="nav-item <?php echo isActive('/register'); ?>"><a href="/register" class="nav-link">Register</a></li>
+                <?php else: ?>
+                    <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>
@@ -55,7 +87,7 @@ function isActive($route)
 
 
 <div class="container my-5">
-    <form class="row g-3 mb-4" method="POST" action="register.php">
+    <form class="row g-3 mb-4" method="POST" action="">
         <div class="col-md-6">
             <label for="fullname" class="form-label">FullName</label>
             <input type="text" name="fullname" class="form-control" id="inputCity">
@@ -72,7 +104,7 @@ function isActive($route)
 
         <div class="col-md-4">
             <label for="phone" class="form-label">Phone</label>
-            <input type="number" name="phone" class="form-control" id="inputZip">
+            <input type="text" name="phone" class="form-control" id="inputZip">
         </div>
 
         <div class="col-md-6">
@@ -80,9 +112,14 @@ function isActive($route)
             <input type="password" name="password" class="form-control" id="inputPassword4">
         </div>
 
-        <div class="col-12 ">
+        <div class="col-md-6 mt-5">
+            <label for="profile_picture" class="form-label">Profile Picture</label>
+            <input type="file" name="profile_picture" class="photo" accept="image/*" required>
+        </div>
+
+        <div class="col-12 mt-5">
             <button type="submit" class="btn btn-primary">Sign in</button>
         </div>
     </form>
 
-<div"><?php include 'Partials/footer.php'; ?></div>
+<div><?php include 'Partials/footer.php'; ?></div>

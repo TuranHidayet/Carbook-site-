@@ -1,7 +1,7 @@
 <?php
 
 namespace Core;
-
+use App\Controllers\Admin\CarController;
 class Route
 {
     private array $route = array();
@@ -11,5 +11,6 @@ class Route
         if(gettype($method) === "string"){
             $res = Helper::explodeController($method);
         }
+
     }
 }

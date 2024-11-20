@@ -29,4 +29,15 @@ class Helper
         return explode('@', $method);
 
     }
+
+    public static function getImageUrl($imageName): string
+    {
+        return '/uploads/' . $imageName;
+    }
+
+    public static function redirect()
+    {
+        header("Location: /admin/cars");
+        exit;
+    }
 }

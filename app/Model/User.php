@@ -10,16 +10,16 @@ class User
         $stmt->execute([$id]);
         return $stmt->fetch(\PDO::FETCH_ASSOC);
     }
-    public static function create($name, $email, $password){
+    public static function create($fullname, $username, $email, $phone, $password, $profile_picture){
         global $db;
-        $stmt = $db->getConnectionInstance()->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?)");
-        return $stmt->execute([$name, $email, password_hash($password, PASSWORD_DEFAULT)]);
+        $stmt = $db->getConnectionInstance()->prepare("INSERT INTO users (fullname, username, email, phone, password, profile_picture) VALUES (?, ?, ?, ?, ?, ?)");
+        return $stmt->execute([$fullname, $username, $email, $phone, password_hash($password, PASSWORD_DEFAULT), $profile_picture]);
     }
 
-    public static function update($id, $name, $email, $password){
+    public static function update($id, $username, $email, $password, $profile_picture){
         global $db;
-        $stmt = $db->getConnectionInstance()->prepare("UPDATE users SET name = ?, email = ?, password = ? WHERE id = ?");
-        return $stmt->execute([$name, $email, password_hash($password, PASSWORD_DEFAULT), $id]);
+        $stmt = $db->getConnectionInstance()->prepare("UPDATE users SET username = ?, email = ?, password = ?, profile_picture = ? WHERE id = ?");
+        return $stmt->execute([$username, $email, password_hash($password, PASSWORD_DEFAULT), $profile_picture, $id]);
     }
 
     public static function delete($id){
@@ -33,5 +33,24 @@ class User
         $stmt = $db->getConnectionInstance()->prepare("SELECT * FROM users");
         $stmt->execute();
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+    }
+
+    public static function getUserByUsername($username)
+    {
+        $dbConfig = [
+            'host' => 'localhost',
+            'database' => 'car_lab',
+            'username' => 'root',
+            'password' => ''
+        ];
+
+        $connection = Database::getConnection($dbConfig);
+        if ($connection) {
+            $stmt = $connection->prepare("SELECT * FROM users WHERE username = :username");
+            $stmt->execute(['username' => $username]);
+            return $stmt->fetch(\PDO::FETCH_ASSOC);
+        }
+
+        return null;
     }
 }
